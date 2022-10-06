@@ -87,9 +87,10 @@ graph_spectrogram(str2, signalB, frequencyB, time_str, frequency_str)
 
 # 7 señal ruido rosa
 pink_frequency, pink_signal = read("Ruido Rosa.wav")
+# since both signals need the same frequency, a re-sampling is needed
+total_of_samplings = round(len(pink_signal) * oat)
 
 # pink_signal is added to cristhofer's signal in order to make it noisy
-noisy_signal 
 
 # a. repetir 3,4y5 con la señal ruidosa
 
