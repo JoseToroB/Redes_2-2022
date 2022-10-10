@@ -16,6 +16,11 @@ Ayudante:
 '''
 
 
+'''
+Input:
+Output:
+Description:
+'''
 def graph_spectrogram(title, x, y, label_x, label_y):
     mplt.figure(title)
     mplt.specgram(x, Fs=y)
@@ -25,6 +30,11 @@ def graph_spectrogram(title, x, y, label_x, label_y):
     mplt.show()
 
 
+'''
+Input:
+Output:
+Description:
+'''
 def graph(title, color, x, y, label_x, label_y):
     mplt.figure(title)
     mplt.plot(x, y, color)
@@ -35,6 +45,11 @@ def graph(title, color, x, y, label_x, label_y):
     return
 
 
+'''
+Input:
+Output:
+Description:
+'''
 def sum_signals(signal1, signal2):
     new_signal = np.zeros(len(signal2))
     for i in range(0, len(signal2)):
@@ -42,6 +57,11 @@ def sum_signals(signal1, signal2):
     return new_signal
 
 
+'''
+Input:
+Output:
+Description:
+'''
 def read_file(name):
     frequency, signal = read(name)
     try:
