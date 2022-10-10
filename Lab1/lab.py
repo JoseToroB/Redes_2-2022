@@ -17,10 +17,11 @@ Ayudante:
 
 
 '''
-Input:
-Output:
-Description:
+Input: String x Variable x Variable x String x String
+Output: Void
+Description: Allows to plot as spectrogram using the input given
 '''
+
 def graph_spectrogram(title, x, y, label_x, label_y):
     mplt.figure(title)
     mplt.specgram(x, Fs=y)
@@ -31,9 +32,9 @@ def graph_spectrogram(title, x, y, label_x, label_y):
 
 
 '''
-Input:
-Output:
-Description:
+Input: String x String x Varible x Variable x String x String
+Output: Void
+Description: Allows to plot as spectrogram using the input given
 '''
 def graph(title, color, x, y, label_x, label_y):
     mplt.figure(title)
@@ -42,14 +43,15 @@ def graph(title, color, x, y, label_x, label_y):
     mplt.xlabel(label_x)
     mplt.ylabel(label_y)
     mplt.show()
-    return
 
 
 '''
-Input:
-Output:
-Description:
+Input: list x list
+Output: list
+Description: adds each element of signal1 with it's corresponding elements of signal2
 '''
+
+
 def sum_signals(signal1, signal2):
     new_signal = np.zeros(len(signal2))
     for i in range(0, len(signal2)):
@@ -58,10 +60,12 @@ def sum_signals(signal1, signal2):
 
 
 '''
-Input:
-Output:
-Description:
+Input: String
+Output: list
+Description: Read a file and save it
 '''
+
+
 def read_file(name):
     frequency, signal = read(name)
     try:
