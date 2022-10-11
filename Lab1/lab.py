@@ -62,7 +62,7 @@ def sum_signals(signal1, signal2):
 '''
 Input: String
 Output: list
-Description: Read a file and save it
+Description: Reads the file and return it's variables
 '''
 
 
